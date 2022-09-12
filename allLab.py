@@ -126,10 +126,11 @@ if __name__ == '__main__':
 
 # #### 6 selection sort
 def selectionSort(nums):
-    for i in range(5):
+    size =len(nums)
+    for i in range(size):
         minpos = i
 
-        for j in range(i, 6):
+        for j in range(i,size ):
             if nums[j] < nums[minpos]:
                 minpos = j
 
@@ -138,10 +139,9 @@ def selectionSort(nums):
         nums[i] = nums[minpos]
         nums[minpos] = temp
 
-nums = list(map(int, input("enter array list").split()))
+nums = list(map(int , input("enter: ").split()))
 selectionSort(nums)
 print(nums)
-
 
 
 # #### 7 pattern sort
